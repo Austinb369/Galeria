@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--NOTA PARA EL PROFESOR: Este es un formulario de testeo, la práctica de galería se encuentra en index.html -->
+
+<html>
+    <head>
+        <title>Cuestionario de videojuegos</title>
+        <link rel="stylesheet" href="styles/mainjuegos.css"/>
+    </head>
+    <body bgcolor="#e8e8e8">
+        <form>
+            <h1 style="margin: 25px;">Videojuegos</h1>
+                <h3 style="margin:20px;">Favorito<input placeholder="Ejemplo: Minecraft"/></h3>
+            <div class="card">
+                <h2>Consola favorita</h2>
+                <hr/>
+                    <br>
+                    <div style="width:500px; height:200px; display: flex;  flex-direction: column;
+                    flex-wrap: wrap;">
+                        <label><p><input type="radio" name="consolas" value="Switch">Switch
+                        </p></label>
+                        <label><p><input type="radio" name="consolas" value="PS5">PS5
+                        </p></label>
+                        <label><p><input type="radio" name="consolas" value="Xbox">Xbox
+                        </p></label>
+                        <label><p><input type="radio" name="consolas" value="PC">PC
+                        </p></label>
+                        <label><p><input type="radio" name="consolas" value="Otro">Otro
+                        </p></label>
+                    </div>
+            </div>
+            <br>
+            <div class="card">
+                <h2>¿En dónde has jugado?</h2>
+                <hr/>
+                    <br>
+                    <div style="width:500px; height:200px; display: flex;  flex-direction: column;
+                    flex-wrap: wrap;">
+                        <label><p><input type="checkbox" name="consolas" value="Switch">Switch
+                        </p></label>
+                        <label><p><input type="checkbox" name="consolas" value="PS5">PS5
+                        </p></label>
+                        <label><p><input type="checkbox" name="consolas" value="Xbox">Xbox
+                        </p></label>
+                        <label><p><input type="checkbox" name="consolas" value="PC">PC
+                        </p></label>
+                        <label><p><input type="checkbox" name="consolas" value="Otro">Otro
+                        </p></label>
+                    </div>
+            </div>
+            <br>
+                <h3 style="margin-left:20px;">¿Cuándo fue la última vez que jugaste?</h3>
+                <input type="date"/>
+            <br>
+            <button id="botonform" style="margin: 20px;">Enviar</button>
+
+            <script>
+                const boton = document.getElementById("botonform");
+                boton.addEventListener("click", botoninterHandler);
+            function botoninterHandler() {
+                alert ("QUE ME HAN PRESIONADO TIO, estamos de moda entre las de 20");
+                boton.innerHTML = "Eitale"
+            }
+            </script>
+        </form>
+    </body>
+</html>

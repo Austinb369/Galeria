@@ -1,106 +1,68 @@
-.spacedivid2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
-    width: 1265px;
-}
-.retornotexto {
-    display: flex;
-    width: 600px;
-    border: 3px solid black;
-    margin: 20px;
-    flex-wrap: wrap;
-}
-.icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
-    width: 100px;
-    height: 25px;;
-}
-.contenedorimgs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 1200px;
-    height: 840px;
-    background-color: #E9E9E9;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 3px solid #838383;
-    margin: 20px;
-    border-radius: 50px;
-}
-.contenedortext {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 550px;
-    height: 840px;
-    background-color: #E9E9E9;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 3px solid #838383;
-    margin: 20px;
-    border-radius: 50px;
-}
-.imagen-redon {
-    width: 360px;
-    height: 303px;
-    border-radius: 50px;
-    margin: 20px;
-}
-.wrappercentrar {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
-    align-items: null;    /* Centra verticalmente */
-    height: 400px;          /* Hace que el contenedor ocupe toda la altura de la pantalla */
-    margin: 0;
-}
-ul li.elementolista {
+button {
+    color: #555555;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
     font-family: 'Consolas', 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-style: normal;
-    font-size: x-large;
-    color: #5c5c5c;
-}
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }
+  
+  button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
 
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  input {
+    border: none;
+    outline: none;
+    padding: 0.7em 1.7em;
     margin: 20px;
-}
+    font-size: 18px;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    border-radius: 15px;
+    color: #555555;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
 
-.table{
-    display: flex;
-    flex-direction: row;
-}
-.column{
+  .card {
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+  }
+
+  .formradio{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
-}
-
-@keyframes orbit{
-    to{
-        transform: rotate(
-            360deg);
-    }
-}
-h1 {
+    height: 50px;
+    width: 500px;
+  }
+  h1 {
     font-family: 'Consolas', 'Courier New', Courier, monospace;
     font-size: 36px;
     font-weight: bold;
     font-style: normal;
-    color: rgb(55, 55, 55);
+    color: #555555;
     background-color: null;
     text-align: start;
     text-indent: 0px;
@@ -125,7 +87,7 @@ h2 {
     font-size: 25px;
     font-weight: bold;
     font-style: normal;
-    color: rgb(55, 55, 55);
+    color: #555555;
     background-color: null;
     text-align: start;
     text-indent: 0px;
@@ -150,7 +112,7 @@ h3 {
     font-size: 20px;
     font-weight: bold;
     font-style: normal;
-    color: rgb(55, 55, 55);
+    color: #555555;
     background-color: null;
     text-align: start;
     text-indent: 0px;
@@ -175,7 +137,7 @@ h4 {
     font-size: 15px;
     font-weight: bold;
     font-style: normal;
-    color: rgb(55, 55, 55);
+    color: #555555;
     background-color: null;
     text-align: start;
     text-indent: 0px;
@@ -200,7 +162,7 @@ p {
     font-size: 12px;
     font-weight: bold;
     font-style: normal;
-    color: rgb(55, 55, 55);
+    color: #555555;
     background-color: null;
     text-align: start;
     text-indent: 0px;
@@ -210,8 +172,7 @@ p {
     text-decoration: null;
     text-transform: null;
     text-shadow: null;
-    margin: 0px;
-    padding: 10px;
+    margin: 10px;
     direction: null;
     unicode-bidi: bidi-override;
     white-space: null;
